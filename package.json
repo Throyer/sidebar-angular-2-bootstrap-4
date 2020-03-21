@@ -1,6 +1,6 @@
 {
-  "name": "menus-tmov-mssql",
-  "version": "0.0.0",
+  "name": "simple-angular-sidebar",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -19,13 +19,9 @@
     "@angular/platform-browser": "~8.2.13",
     "@angular/platform-browser-dynamic": "~8.2.13",
     "@angular/router": "~8.2.13",
-    "@fortawesome/angular-fontawesome": "^0.6.0",
     "@fortawesome/fontawesome-free": "^5.12.1",
-    "@fortawesome/fontawesome-svg-core": "^1.2.27",
-    "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@ng-select/ng-select": "^3.7.2",
     "bootstrap": "4.1.1",
-    "font-awesome": "^4.7.0",
     "ngx-bootstrap": "^5.3.2",
     "ngx-sortablejs": "^3.1.4",
     "rxjs": "~6.4.0",

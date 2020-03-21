@@ -1,3 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,400i,700&display=swap');
 @import "~@ng-select/ng-select/themes/default.theme.css";
 
+// Sidebar
+@import "./styles/variables.scss";
+@import "./styles/content.scss";
+@import "./styles/media-queries.scss";
+@import "./styles/navbar.scss";
+@import "./styles/sidebar.scss";
+@import "./styles/utils.scss";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background : #fafafa;
+}

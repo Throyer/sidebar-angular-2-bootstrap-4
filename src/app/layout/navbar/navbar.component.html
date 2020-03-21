@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-ligth bg-ligth shadow-sm">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbar">
+
+    <form class="shadow-sm d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+      <div class="input-group">
+        <input type="text" class="form-control border-0 small" placeholder="Search for..." aria-label="Search"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-purple" type="button">
+            <i class="fas fa-search fa-sm"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-item nav-link text-purple" href="#">
+          <i class="fas fa-envelope"></i>
+          Contato <span class="sr-only">(current)</span>
+        </a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <button class="nav-link text-purple dropdown-toggle btn btn-link" id="navbarDropdown" type="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+          <i class="fas fa-user-circle"></i>
+          <span>usuario</span>
+          <span class="caret"></span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-user-cog"></i>
+            Conta
+          </a>
+          <div class="d-none d-sm-block dropdown-divider"></div>
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-sign-out-alt"></i>
+            sair
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
