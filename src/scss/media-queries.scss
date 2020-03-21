@@ -58,3 +58,31 @@
     display: none;
   }
 }
+
+@media (min-width: 768px) {
+
+  #sidebar.active {
+    .menus {
+      .menu.expanded {
+        .subs {
+          position                         : absolute;
+          left                             : calc(6.5rem + -1.5rem / 2);
+          z-index                          : 1;
+          width                            : 140px;
+          top                              : 2px;
+          -webkit-animation-name           : growIn;
+          animation-name                   : growIn;
+          -webkit-animation-duration       : .2s;
+          animation-duration               : .2s;
+          -webkit-animation-timing-function: transform cubic-bezier(.18, 1.25, .4, 1), opacity cubic-bezier(0, 1, .4, 1);
+          animation-timing-function        : transform cubic-bezier(.18, 1.25, .4, 1), opacity cubic-bezier(0, 1, .4, 1);
+
+          .link {
+            border-radius: 5px;
+            margin       : 8px;
+          }
+        }
+      }
+    }
+  }
+}

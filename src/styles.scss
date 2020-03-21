@@ -2,12 +2,13 @@
 @import "~@ng-select/ng-select/themes/default.theme.css";
 
 // Sidebar
-@import "./styles/variables.scss";
-@import "./styles/content.scss";
-@import "./styles/media-queries.scss";
-@import "./styles/navbar.scss";
-@import "./styles/sidebar.scss";
-@import "./styles/utils.scss";
+@import "./scss/variables.scss";
+@import "./scss/content.scss";
+@import "./scss/media-queries.scss";
+@import "./scss/navbar.scss";
+@import "./scss/sidebar.scss";
+@import "./scss/animations.scss";
+@import "./scss/utils.scss";
 
 body {
   font-family: 'Poppins', sans-serif;

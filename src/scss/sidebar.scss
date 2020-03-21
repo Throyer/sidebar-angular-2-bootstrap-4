@@ -3,6 +3,13 @@
   align-items: stretch;
 }
 
+.animate {
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
 #sidebar.active {
   min-width : 80px;
   max-width : 80px;
@@ -60,6 +67,15 @@
         background: $base-color-ligth;
       }
     }
+
+    .subs {
+      background-color: #FFF;
+      border: solid #e8e8e8 1px;
+
+      .name {
+        display: inline;
+      }
+    }
   }
 }
 
@@ -69,6 +85,10 @@
   background: $base-color;
   color     : #fff;
   transition: all 0.3s;
+
+  .link.active {
+    background-color: $base-color-super-ligth !important;
+  }
 
   .sidebar-header {
     padding   : 20px;
@@ -92,6 +112,8 @@
     list-style  : none;
 
     .menu {
+
+      position: relative;
 
       .link {
         position       : relative;
@@ -140,6 +162,13 @@
         font-size   : 10pt;
         padding-left: 30px;
         background  : $base-color-ligth;
+      }
+    }
+
+    .subs {
+      border: none;
+      .name {
+        display: none;
       }
     }
   }

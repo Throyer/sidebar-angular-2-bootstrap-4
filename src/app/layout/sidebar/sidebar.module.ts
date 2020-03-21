@@ -1,19 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { MenuModule } from '../menu/menu.module';
 
 import { SidebarComponent } from './sidebar.component';
-import { RouterModule } from '@angular/router';
-
-
 
 @NgModule({
   declarations: [SidebarComponent],
   imports: [
     CommonModule,
-    CollapseModule.forRoot(),
-    RouterModule
+    MenuModule
   ],
   exports: [SidebarComponent]
 })

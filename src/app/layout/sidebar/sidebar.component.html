@@ -1,72 +1,12 @@
 <nav class="align-content-around">
   <div class="sidebar-header">
-      <h4 class="text-center header">Simple Sidebar</h4>
-      <strong><i class="fas fa-grin-squint-tears"></i></strong>
+    <h4 class="text-center header">Simple Sidebar</h4>
+    <strong><i class="fas fa-grin-squint-tears"></i></strong>
   </div>
-
-  <!-- <button type="button" class="btn btn-primary" (click)="isCollapsed = !isCollapsed"
-          [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">Toggle collapse
-  </button>
-  <hr>
-  <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
-    <div class="well well-lg card card-block card-header">Some content</div>
-  </div> -->
-
-  <ul class="menus components">
-      <li class="menu" *ngFor="let menu of menus" [ngClass]="{'expanded': menu.active}">
-        <a class="link" (click)="menu.active = !menu.active" [ngClass]="{'arrow': thisMenuHaveMoreMenus(menu) }" routerLink="menu.route">
-          <i class="icon" [ngClass]="menu.icon"></i>
-          <span class="name">{{ menu.name }}</span>
-        </a>
-        <ul *ngIf="thisMenuHaveMoreMenus(menu)" [collapse]="!menu.active" [isAnimated]="true" class="menus">
-            <li class="sub" *ngFor="let sub of menu.menus">
-                <a class="link" routerLink="sub.route">{{ sub.name }}</a>
-            </li>
-        </ul>
-      </li>
-      <!-- <li class="active">
-          <a href="#"  aria-expanded="false" class="menu dropdown-toggle">
-              <i class="fas fa-home"></i>
-              Home
-          </a>
-          <ul class="collapse list-unstyled" id="homeSubmenu">
-              <li>
-                  <a href="#">Home 1</a>
-              </li>
-              <li>
-                  <a href="#">Home 2</a>
-              </li>
-              <li>
-                  <a href="#">Home 3</a>
-              </li>
-          </ul>
-      </li>
-      <li>
-          <a href="#">
-              <i class="fas fa-briefcase"></i>
-              About
-          </a>
-          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="menu dropdown-toggle">
-              <i class="fas fa-copy"></i>
-              Pages
-          </a>
-          <ul class="collapse list-unstyled" id="pageSubmenu">
-              <li>
-                  <a href="#">Page 1</a>
-              </li>
-              <li>
-                  <a href="#">Page 2</a>
-              </li>
-              <li>
-                  <a href="#">Page 3</a>
-              </li>
-          </ul>
-      </li> -->
-  </ul>
-
+  <app-menu></app-menu>
   <div class="sidebar-toggler">
-      <button type="button" (click)="toggle()" class="toggler text-light btn btn-light btn-sm rounded-circle">
-          <i class="fas" [ngClass]="{'fa-angle-right': toggled, 'fa-angle-left': !toggled}"></i>
-      </button>
+    <button type="button" (click)="toggle()" class="toggler text-light btn btn-light btn-sm rounded-circle">
+      <i class="fas" [ngClass]="{'fa-angle-right': toggled, 'fa-angle-left': !toggled}"></i>
+    </button>
   </div>
 </nav>

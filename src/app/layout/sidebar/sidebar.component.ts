@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import Menu from "../menu/Menu";
 
 @Component({
   selector: 'app-sidebar',
@@ -12,38 +13,9 @@ export class SidebarComponent implements OnInit {
   @Output()
   public onToggle: EventEmitter<boolean> = new EventEmitter();
 
-  menus = [
-    {
-      icon: "fas fa-home",
-      name: "Home",
-      route: "/",
-      active: false,
-      menus: []
-    },
-    {
-      icon: "fas fa-cog",
-      name: "Configurações",
-      route: null,
-      active: false,
-      menus: [
-        {
-          icon: null,
-          name: "Example menu",
-          route: "/hello",
-          active: false,
-          menus: []
-        }
-      ]
-    }
-  ];
-
   constructor() { }
 
   ngOnInit() {
-  }
-
-  thisMenuHaveMoreMenus({ menus }) {
-    return menus && menus.length > 0;
   }
 
   toggle() {

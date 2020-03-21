@@ -1,1 +1,15 @@
-<p>menu works!</p>
+<ul class="menus components">
+  <li class="menu" *ngFor="let menu of menus" [ngClass]="{'expanded': menu.active}">
+    <a class="link" (click)="expand(menu.id)" [ngClass]="{'arrow': thisMenuHaveMoreMenus(menu) }"
+      [routerLink]="menu.route">
+      <i class="icon" [ngClass]="menu.icon"></i>
+      <span class="name">{{ menu.name }}</span>
+    </a>
+    <ul *ngIf="thisMenuHaveMoreMenus(menu)" [collapse]="!menu.active"  class="rounded menus subs animated--grow-in shadow-sm">
+      <small class="name text-purple">{{ menu.name }}</small>
+      <li class="sub" *ngFor="let sub of menu.menus">
+        <a (click)="menu.active = !menu.active" class="link" [routerLink]="sub.route">{{ sub.name }}</a>
+      </li>
+    </ul>
+  </li>
+</ul>
